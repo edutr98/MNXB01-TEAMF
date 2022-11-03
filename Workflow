@@ -1,0 +1,16 @@
+The project is developed between meetings in person and the use of GitHub.
+The purpose of combaining both is to have more flexibility with the schedule of everyone in the project.
+The meetings will be detailed in this file in order to keep track of the decisions that are taken during this meetings and also 
+to be able to participate in this decisions in the case anyone can not attend the meeting.
+
+
+1st of November meeting:
+Attendance: Sergio, Andrea Edu.
+During this meeting we discussed the topics of the project, the goal of the project is to try to measure the impact of the climate change in the temperature
+of two towns in Sweden, the first one we chose was Umea and the second one Flosterbo. The decision is based in the geographical location of both towns
+and the amount of data avaiable for both stations, this will be more detailed in the report.
+
+Also in this meeting we decided which graphs we should plot to try to show this shift in the temperature. The detail of the graphs can be found on the report. 
+At the end we decided the next step to do in our project, starting for cleaning the data for both stations and settling the ditribution for the GitHub repository.
+
+
