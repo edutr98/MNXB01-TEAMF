@@ -35,7 +35,7 @@ Gr1->SetLineColor(kBlue);
 Gr2->SetName("Warmest day");
 Gr2->SetMarkerStyle(kFullCircle);
 Gr2->SetLineColor(kRed);
-mg->SetTitle("Diference on temperature between average and Coldest/Warmest year in Umea");
+mg->SetTitle("Diference on temperature between average and Coldest/Warmest day in Umea");
 mg->GetXaxis()->SetTitle("Year");
 mg->GetYaxis()->SetTitle("Delta T(C)");
 
