@@ -7,10 +7,20 @@ to be able to participate in this decisions in the case anyone can not attend th
 1st of November meeting:
 Attendance: Sergio, Andrea Edu.
 During this meeting we discussed the topics of the project, the goal of the project is to try to measure the impact of the climate change in the temperature
-of two towns in Sweden, the first one we chose was Umea and the second one Flosterbo. The decision is based in the geographical location of both towns
+of two towns in Sweden, the first one we chose was Umea and the second one Falsterbo. The decision is based in the geographical location of both towns
 and the amount of data avaiable for both stations, this will be more detailed in the report.
 
 Also in this meeting we decided which graphs we should plot to try to show this shift in the temperature. The detail of the graphs can be found on the report. 
 At the end we decided the next step to do in our project, starting for cleaning the data for both stations and settling the ditribution for the GitHub repository.
 
+13th of November meeting:
 
+Attendance: Sergio and Edu.
+The purpose of this meeting was to discuss about the format the data files should have after the cleaning process.
+The result of this meeting was the agreement on having seven different columns with the different variables.
+
+16th of november meeting:
+Attendance: Andrea, Sergio and Edu.
+The aim of this meeting was to discuss which parts of the projects are left or if we needed to make any change to the code that was already build.
+The result was that we needed to remake the data files in order to add two new columns with the delta of the temperature. 
+This change was produce by the lack of knowledge on root to perform a boxplot as it was the original idea. 
