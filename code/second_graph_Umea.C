@@ -33,7 +33,7 @@ Gr1->SetLineColor(kBlue);
 Gr2->SetName("Warmest day");
 Gr2->SetMarkerStyle(kFullCircle);
 Gr2->SetLineColor(kRed);
-mg->SetTitle("Coldest and warmest day per year");
+mg->SetTitle("Coldest and warmest day per year Umea");
 mg->GetXaxis()->SetTitle("Year");
 mg->GetYaxis()->SetTitle("Temperature(C)");
 
