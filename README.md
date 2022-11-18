@@ -1,10 +1,6 @@
 # MNXB01-TEAMF
 
 
-The filtered data have been furhter modified with Excell, in order to add some new columns to make two final .txt files, one for Falsterbo and one for Umeå, which include all the necessary informations, to be used in ROOTcfor all the plots. Excell was used first to add two new columns for each one of the files Falsterbo_1 and Umea_1, reporting the difference between the maximum temperature values ("Maxm") and the mean temeperatures ("Avg") in the column "DeltaTmax", and for the difference between "Minm" and "Avg" in "DeltaTmin". Furhtermore, Excell has been used to make other two new columns with the days shifted, used in section 2.4 of the report. To shift the data, we chose first to filter the data in two different files for each place, called respectively "Falsterbo_GREATER_2", "Falsterbo_LESS_2", "Umeå_GREATER_2", "Umeå_LESS_2". The "GREATER" files report the values of the warmest and coldest days only if they are measured after September, namely after the 270th day of the year, while if the day is before the 270th is reported in the LESS file. In this way, it was possible to make with Excell a new merged-column with all the coldest/warmest day of the "GREATER" file shifted by -270 days, and the coldest/warmest day of the "LESS" file shifted by +95 days. The reason of this shift is explained in the report. Then, it was possible to make the two complete files suitable for all the plots, called "Umeå_final" and "Falsterbo_final".
-
-Now that we have the data files cleaned with the calculations we need for the plots, we just need to execute the different codes we have written in order to obtain the different plots.
-
 ####################################################################################################################################################################
 FILTERED DATA
 2022.07.2+576
@@ -45,6 +41,10 @@ File that contains the UMEA data filtered by the group (270-365 days)
 UMEA_LESS_HOURS: 
 File that contains the FALSTERBO data filtered by the group (270-365 days)  
 
+
+The filtered data have been furhter modified with Excell, in order to add some new columns to make two final .txt files, one for Falsterbo and one for Umeå, which include all the necessary informations, to be used in ROOTcfor all the plots. Excell was used first to add two new columns for each one of the files Falsterbo_1 and Umea_1, reporting the difference between the maximum temperature values ("Maxm") and the mean temeperatures ("Avg") in the column "DeltaTmax", and for the difference between "Minm" and "Avg" in "DeltaTmin". Furhtermore, Excell has been used to make other two new columns with the days shifted, used in section 2.4 of the report. To shift the data, we chose first to filter the data in two different files for each place, called respectively "Falsterbo_GREATER_2", "Falsterbo_LESS_2", "Umeå_GREATER_2", "Umeå_LESS_2". The "GREATER" files report the values of the warmest and coldest days only if they are measured after September, namely after the 270th day of the year, while if the day is before the 270th is reported in the LESS file. In this way, it was possible to make with Excell a new merged-column with all the coldest/warmest day of the "GREATER" file shifted by -270 days, and the coldest/warmest day of the "LESS" file shifted by +95 days. The reason of this shift is explained in the report. Then, it was possible to make the two complete files suitable for all the plots, called "Umeå_final" and "Falsterbo_final".
+
+Now that we have the data files cleaned with the calculations we need for the plots, we just need to execute the different codes we have written in order to obtain the different plots.
 
 
 
