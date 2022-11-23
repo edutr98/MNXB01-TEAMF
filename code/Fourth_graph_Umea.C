@@ -41,7 +41,7 @@ mg->GetYaxis()->SetTitle("Delta T(C)");
 
 
 while(1){
-file >> eventNo >> year >> CDay >> CTemp >> WDay >> WTemp >> temp >> DTmin >> DTmax;
+file >> eventNo >> year >> WDay >> WTemp >> CDay >> CTemp >> temp >> DTmin >> DTmax;
 /* we use this for debbuging
 cout << "Reading event: "<< eventNo <<endl;
 cout << "Reading year: "<< year <<endl;
