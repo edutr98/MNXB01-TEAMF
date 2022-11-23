@@ -40,7 +40,7 @@ mg->GetYaxis()->SetTitle("Temperature(C)");
 
 
 while(1){
-file >> eventNo >> year >> CDay >> CTemp >> WDay >> WTemp >> temp >> DTmin >> DTmax;
+file >> eventNo >> year >> WDay >> WTemp >> CDay >> CTemp >> temp >> DTmin >> DTmax;
 
 
 /* we used this for debbuging
