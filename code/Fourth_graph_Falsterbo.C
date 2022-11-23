@@ -23,7 +23,7 @@ Double_t DTmin;
 Double_t DTmax;
 Int_t eventNo=0;
 fstream file;
-file.open("Plot_1_3_Falsterbo.txt",ios::in);
+file.open("Flasterbo_final.txt",ios::in);
 
 // now We create the graph and the multigraph to plot both at the same time
 TMultiGraph *mg = new TMultiGraph();
@@ -41,7 +41,7 @@ mg->GetYaxis()->SetTitle("Delta T(C)");
 
 
 while(1){
-file >> eventNo >> year >> CDay >> CTemp >> WDay >> WTemp >> temp >> DTmin >> DTmax;
+file >> eventNo >> year >> WDay >> WTemp >> CDay >> CTemp >> temp >> DTmin >> DTmax;
 /* we use this for debbuging
 cout << "Reading event: "<< eventNo <<endl;
 cout << "Reading year: "<< year <<endl;
