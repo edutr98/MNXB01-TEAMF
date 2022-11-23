@@ -23,7 +23,7 @@ Double_t DTmax;
 Int_t eventNo=0;
 //We open the file we are getting the data from
 fstream file;
-file.open("Plot_1_3_UMEA.txt",ios::in);
+file.open("UMEA_FINAL.txt",ios::in);
 // now We create the graph
 TGraph *Gr1= new TGraph();
 Gr1->SetMarkerStyle(kFullCircle);
@@ -33,7 +33,7 @@ Gr1->GetXaxis()->SetTitle("Year");
 Gr1->GetYaxis()->SetTitle("Temperature(C)");
 
 while(1){
-file >> eventNo >> year >> CDay >> CTemp >> WDay >> WTemp >> temp >> DTmin >> DTmax;
+file >> eventNo >> year >> WDay >> WTemp >> CDay >> CTemp >> temp >> DTmin >> DTmax;
 /* we used this for debbuging
 cout << "Reading event: "<< eventNo <<endl;
 cout << "Reading year: "<< year <<endl;
