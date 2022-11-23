@@ -23,7 +23,7 @@ Double_t DTmin;
 Double_t DTmax;
 Int_t eventNo=0;
 fstream file;
-file.open("Plot_1_3_UMEA.txt",ios::in);
+file.open("UMEA_FINAL.txt",ios::in);
 
 // now We create the graph and the multigraph to plot both at the same time
 TMultiGraph *mg = new TMultiGraph();
