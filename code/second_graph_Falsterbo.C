@@ -23,7 +23,7 @@ Double_t DTmax;
 Int_t eventNo=0;
 // we open the file
 fstream file;
-file.open("Plot_1_3_UMEA.txt",ios::in);
+file.open("Falsterbo_final.txt",ios::in);
 // now We create the graph
 TMultiGraph *mg = new TMultiGraph();
 TGraph *Gr1= new TGraph();
