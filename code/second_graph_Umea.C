@@ -22,7 +22,7 @@ Double_t DTmin;
 Double_t DTmax;
 Int_t eventNo=0;
 fstream file;
-file.open("Plot_1_3_UMEA.txt",ios::in);
+file.open("UMEA_FINAL.txt",ios::in);
 // now We create the graph
 TMultiGraph *mg = new TMultiGraph();
 TGraph *Gr1= new TGraph();
@@ -39,7 +39,7 @@ mg->GetYaxis()->SetTitle("Temperature(C)");
 
 
 while(1){
-file >> eventNo >> year >> CDay >> CTemp >> WDay >> WTemp >> temp >> DTmin >> DTmax;
+file >> eventNo >> year >> WDay >> WTemp >> CDay >> CTemp >> temp >> DTmin >> DTmax;
 
 /*we used this for debbuging
 cout << "Reading event: "<< eventNo <<endl;
