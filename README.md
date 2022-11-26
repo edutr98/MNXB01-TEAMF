@@ -1,23 +1,68 @@
 # MNXB01-TEAMF
 
+R
 
-####################################################################################################################################################################
+###########################################################
 FILTERED DATA
 2022.07.2+576
 
 ###########################################################
-How to execute
+Prerequisites
 ###########################################################
 
-1. Be sure to have the last available version of R
-2. We recommend to use RStudio 
+1. Be sure to have the last available version of R (Windows, Mac, Linux or Aurora) 
+2. We recommend to use RStudio but the use of R would be fine 
 3. Please install the required libraries 
+  3.a If you don't have installed a library, use line code install.packages("name_library")
 4. Load the libraries
-5. You are done!, the code is good to go. 
+  4.a To load the libraries use the line code library(name_library) 
+6. Once you have completed all the prerequisites, you can start executing the code
 
 ############################################################
-Content
+Before executing the code (you have to know) 
 ############################################################
+In this project the data was given in .csv.
+As we wanted to visualize the code before using R to take decisions, we changed file from csv "comma separated" to xlsx "File created by Microsoft Excel"
+
+
+############################################################
+Executing the code in R
+############################################################
+
+We will divide this sections in three different parts: 
+1. Data loading 
+2. Data filtering 
+3. Data processing 
+4. Data output 
+
+############################################################
+1. Data loading 
+############################################################
+As estated in the previous section, we will use the files in .xslx format
+We will use the "readxl" library wich allow us to load .xslx files directly, the code line is as shown in (A) for Umea
+(B) read_xlsx("C:/Users/valua/Desktop/Computing project/Data/Data.xlsx", sheet="Umea")
+
+
+
+If you want to load the .csv original format files, just install and/or load the library "readr", the code line with the readr library should be as follows (B)
+(B) read_csv("D:\\RStudio\\Binning\\data.csv") 
+
+############################################################
+2. Data filtering
+############################################################
+We used the dplyr, chron and lubridate libraries 
+
+Once you have uploaded the data, we can start filtering it. 
+
+1.  We want to change the data type for some variables in Umea and Falsterbo 
+    1a. Lufttemperatur is initially as a character, we want to change it into a numeric variable
+    1b. Datum and Tid (UTC) are initially characters, we want to change it into a date/time variable 
+  
+2.  We want to filter the data according to our goal. 
+    2a. The data was divided into two groups, days between the 0 and 269 day 2. days between the 270 and 365 day. 
+    2b. In each group the data was filtered according to the hours that were common in Falsterbo and Umea. 07:00:00, 13:00:00, 20:00:00.
+    
+
 
 Data_Filtered_GREA_LESS:
 File that contains all the data divided in two groups (0-269 days), (270-365 days) and filtered by hours 07:00:00, 13:00:00, 20:00:00
